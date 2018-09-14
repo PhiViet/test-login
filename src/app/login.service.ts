@@ -7,8 +7,9 @@ import { Observable } from '../../node_modules/rxjs';
 export class LoginService {
 
     public socket;
-    private url = 'http://localhost:8080';
-    // private url = 'http://localhost:3000';
+
+    private url = 'https://ad-test-login.herokuapp.com';
+    // private url = 'http://localhost:8080';
 
     constructor() {
         this.socket = io(this.url);
